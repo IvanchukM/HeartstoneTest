@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">HeartstoneTestApp</string>
+
+    <!--App Bar Titles -->
+    <string name="app_bar_title_cards_list">Cards</string>
+    <string name="app_bar_title_favourite_cards">Favourite Cards</string>
+    <string name="app_bar_title_cards_details">Details</string>
+    <string name="app_bar_title_search">Search</string>
+
+    <!--Bottom Navigation Titles -->
+    <string name="bottom_navigation_cards">Cards</string>
+    <string name="bottom_navigation_favourite">Favourite</string>
+
+    <!-- Sort Item Titles -->
+    <string name="sort_by_asc_title">Sort by cost ascending</string>
+    <string name="sort_by_desc_title">Sort by cost descending</string>
+    <string name="sort_by_class_title">Sort by class</string>
+
+    <!-- Component Strings -->
+    <string name="search_bar">Search</string>
+    <string name="search_no_cards_found">No cards found</string>
+    <!-- String Templates -->
+    <string name="card_name_template">Name: %1$s</string>
+    <string name="card_cost_template">Cost: %1$d</string>
+    <string name="card_class_template">Class: %1$s</string>
+    <string name="card_description_template">Description: %1$s</string>
+    <!-- Loading Messages -->
+    <string name="initial_loading_message">Loading card collection\nThis may take a while</string>
+    <!-- Error Messages -->
+    <string name="general_error_message">Unexpected error</string>
+
+    <!-- Work Manager String -->
+    <string name="work_manager_download_started">Cards update stared</string>
+    <string name="work_manager_success">Cards updated successfully</string>
+    <string name="work_manager_error">Error during update.\n Try again later</string>
+    <string name="work_manager_notification_title">Cards Update</string>
+    <!-- Preview Mock Strings -->
+    <string name="preview_title">Preview Title</string>
+    <string name="preview_error_msg">Preview Error</string>
+    <string name="preview_loading_msg">Preview Loading</string>
 </resources>
