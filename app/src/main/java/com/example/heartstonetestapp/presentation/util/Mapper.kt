@@ -1,7 +1,6 @@
 package com.example.heartstonetestapp.presentation.util
 
 import com.example.heartstonetestapp.data.models.Card
-import com.example.heartstonetestapp.data.util.RequestResult
 import com.example.heartstonetestapp.presentation.models.CardUI
 
 object Mapper {

@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.heartstonetestapp.data.LocalCardsRepository
 import com.example.heartstonetestapp.data.util.RequestResult
-import com.example.heartstonetestapp.presentation.models.CardUI
 import com.example.heartstonetestapp.presentation.util.CardsUIState
 import com.example.heartstonetestapp.presentation.util.Mapper.toUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -42,20 +41,6 @@ class CardsViewModel @Inject constructor(
         }
       }
     }
-  }
-
-  private fun List<CardUI>.applyFilters(): List<CardUI> {
-    var filteredCards = this
-    if (filterState.className) {
-      filteredCards = filteredCards.sortedWith(compareBy(nullsLast()) { it.playerClass })
-    }
-    if (filterState.costAsc) {
-      filteredCards = filteredCards.sortedWith(compareBy(nullsLast()) { it.cost })
-    }
-    if (filterState.costDesc) {
-      filteredCards = filteredCards.sortedByDescending { it.cost }
-    }
-    return filteredCards
   }
 
   fun sortCardsByClass() {

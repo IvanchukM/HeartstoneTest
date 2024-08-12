@@ -3,7 +3,6 @@ package com.example.heartstonetestapp.presentation.screens.favourite
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.heartstonetestapp.data.LocalCardsRepository
-import com.example.heartstonetestapp.data.RemoteCardsRepository
 import com.example.heartstonetestapp.data.util.RequestResult
 import com.example.heartstonetestapp.presentation.util.CardsUIState
 import com.example.heartstonetestapp.presentation.util.Mapper.toUiModel

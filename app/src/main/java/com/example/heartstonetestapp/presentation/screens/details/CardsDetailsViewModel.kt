@@ -2,10 +2,8 @@ package com.example.heartstonetestapp.presentation.screens.details
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.room.PrimaryKey
 import com.example.heartstonetestapp.data.LocalCardsRepository
 import com.example.heartstonetestapp.presentation.models.CardUI
 import com.example.heartstonetestapp.presentation.screens.CardsSharedViewModel
@@ -37,7 +35,7 @@ class CardsDetailsViewModel @Inject constructor(
     }
   }
 
-  fun setCardsDetailsState(sharedCardList: SharedCardList) {
+  private fun setCardsDetailsState(sharedCardList: SharedCardList) {
     cardsDetailsState.value = sharedCardList.cards
   }
 

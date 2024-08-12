@@ -5,8 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.heartstonetestapp.database.models.CardDBO
-import com.example.heartstonetestapp.database.models.FavouriteCardDBO
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface CardsDao {
